@@ -1,0 +1,4 @@
+FROM microsoft/dotnet:latest
+MAINTAINER mike.lucas@wolterskluwer.com
+COPY bin/Debug/netcoreapp1.0/publish/ /root/
+ENTRYPOINT dotnet /root/DotnetCore.dll
